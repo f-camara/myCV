@@ -147,10 +147,12 @@
     });
   }
 
-  /* ----------  Contact form validation  ---------- */
+  /* ----------  Contact form validation
+    ---------- */
   function contactFormValidation() {
     const form = document.getElementById("contactForm");
     if (!form) return;
+    
     const status = document.getElementById("formStatus");
 
     form.addEventListener("submit", (e) => {

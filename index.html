@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex Rivera — Front-End Developer crafting refined, high-performance web experiences." />
+  <meta name="author" content="Alex Rivera" />
+  <title> Flavio Camara · Full Stack Developer</title>
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2310B981'/%3E%3Cstop offset='1' stop-color='%230D9488'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Helvetica,Arial,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="120" tabindex="0">
+
+  <!-- Decorative background blobs -->
+  <div class="bg-decor" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+  </div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top site-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <span class="brand-mark">F</span>
+        <span class="brand-text">Flavio Camara <span class="text-gradient-1">.</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems"
+        aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navItems">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-gradient btn-sm px-3" href="#contact">Let's Talk</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="hero" class="hero d-flex align-items-center">
+    <div class="hero-gradient" aria-hidden="true"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7" data-animate="fade-up">
+          <span class="eyebrow mb-3"><span class="eyebrow-dot"></span> Available for work</span>
+          <h1 class="hero-title">
+            <span class="text-gradient-1">Refined</span> digital
+            experiences for the <span class="text-gradient-2">modern</span> web.
+          </h1>
+          <p class="hero-lead">
+            Hi, I'm Flavio Camara. I build digital experiences that connect people, ideas, and worlds.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#contact" class="btn btn-gradient btn-lg">
+              Start a project
+            </a>
+            <a href="#services" class="btn btn-glass btn-lg">
+              View services
+            </a>
+          </div>
+          <div class="hero-stats mt-5">
+            <div class="stat">
+              <span class="stat-num text-gradient-3">5+</span>
+              <span class="stat-label">Years building</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num text-gradient-3">12+</span>
+              <span class="stat-label">Projects shipped</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num text-gradient-3">10+</span>
+              <span class="stat-label">Happy clients</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block" data-animate="fade-up" data-delay="150">
+          <div class="hero-card glass">
+            <div class="hero-card-head">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--amber"></span>
+              <span class="dot dot--green"></span>
+              <span class="ms-2 small text-muted-2">portfolio.jsx</span>
+            </div>
+<pre class="hero-code"><code><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">'Flavio Camara'</span>,
+  <span class="c-prop">role</span>: <span class="c-str">'Front-End Developer'</span>,
+  <span class="c-prop">location</span>: <span class="c-str">'Remote'</span>,
+  <span class="c-prop">experience</span>: <span class="c-num">5+</span> <span class="c-comment">// years</span>,
+  <span class="c-prop">stack</span>: {
+    <span class="c-prop">frontend</span>: [<span class="c-str">'React'</span>, <span class="c-str">'TypeScript'</span>, <span class="c-str">'Bootstrap'</span>],
+  },
+  <span class="c-prop">passions</span>: [<span class="c-str">'Pixel-perfect UI'</span>, <span class="c-str">'Clean code'</span>, <span class="c-str">'Performance'</span>],
+  <span class="c-prop">available</span>: <span class="c-bool">true</span>,
+  <span class="c-prop">crafted</span>: <span class="c-bool">true</span>,
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span class="mouse"><span class="wheel"></span></span>
+    </a>
+  </header>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5" data-animate="fade-up">
+          <div class="about-portrait glass">
+            <img src="./assets/businessman.png" alt="Flavio Camara" class="portrait-img" />
+          </div>
+        </div>
+        <div class="col-lg-7" data-animate="fade-up" data-delay="120">
+          <span class="section-eyebrow">About</span>
+          <h2 class="section-title">
+            A developer who treats the browser like a
+            <span class="text-gradient-1">canvas</span>.
+          </h2>
+          <p class="section-text">
+            I'm a front-end developer and the founder of Servkode, a front-end web-development agency. I have experience in leading large teams, managing projects,
+            and delivering high-quality web applications. I care about clean code, thoughtful design, and the spaces where they meet and i am  driven
+            by a simple idea: connection matters, in interfaces, in teams, in the systems we build.
+          </p>
+          </p>
+          <p class="section-text">
+            I hope to help humanity with software that is not only functional but also beautiful, intuitive, and accessible.
+          </p>
+
+          <div class="skills mt-4">
+            <div class="skill">
+              <div class="skill-head">
+                <span>HTML &amp; CSS</span><span class="text-gradient-3">96%</span>
+              </div>
+              <div class="skill-bar"><span style="--w:96%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head">
+                <span>JavaScript (ES6+)</span><span class="text-gradient-3">92%</span>
+              </div>
+              <div class="skill-bar"><span style="--w:92%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head">
+                <span>Bootstrap &amp; Tailwind</span><span class="text-gradient-3">90%</span>
+              </div>
+              <div class="skill-bar"><span style="--w:90%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head">
+                <span>React</span><span class="text-gradient-3">88%</span>
+              </div>
+              <div class="skill-bar"><span style="--w:88%"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="text-center mb-5" data-animate="fade-up">
+        <span class="section-eyebrow">Services</span>
+        <h2 class="section-title mx-auto">
+          What I bring to <span class="text-gradient-2">the table</span>.
+        </h2>
+        <p class="section-text mx-auto" style="max-width: 620px;">
+          End-to-end front-end craft. From wireframe to deploy, with performance and polish baked in.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-animate="fade-up">
+          <article class="service-card glass h-100">
+            <div class="service-icon ico-grad-1"><i class="bi bi-code-slash"></i></div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-text">
+              Semantic, accessible markup paired with modern CSS and JavaScript architecture.
+              Clean, maintainable, and built to last.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-animate="fade-up" data-delay="100">
+          <article class="service-card glass h-100">
+            <div class="service-icon ico-grad-2"><i class="bi bi-palette"></i></div>
+            <h3 class="service-title">UI / UX Design</h3>
+            <p class="service-text">
+              Thoughtful interfaces. From design systems to interactive prototypes that align teams and delight users.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-animate="fade-up" data-delay="200">
+          <article class="service-card glass h-100">
+            <div class="service-icon ico-grad-3"><i class="bi bi-phone"></i></div>
+            <h3 class="service-title">Responsive Design</h3>
+            <p class="service-text">
+              Mobile-first layouts that feel native on every screen.
+              Fluid typography, adaptive components, no surprises.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-animate="fade-up">
+          <article class="service-card glass h-100">
+            <div class="service-icon ico-grad-2"><i class="bi bi-lightning-charge"></i></div>
+            <h3 class="service-title">Performance</h3>
+            <p class="service-text">
+              Lighthouse-obsessed. Lazy loading, code-splitting, and silky 60fps animations. Speed is a feature.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-animate="fade-up" data-delay="100">
+          <article class="service-card glass h-100">
+            <div class="service-icon ico-grad-1"><i class="bi bi-magic"></i></div>
+            <h3 class="service-title">Motion &amp; Interaction</h3>
+            <p class="service-text">
+              Purposeful micro-interactions and scroll-driven motion that guide attention and add personality. never just for show.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-animate="fade-up" data-delay="200">
+          <article class="service-card glass h-100">
+            <div class="service-icon ico-grad-2"><i class="bi bi-universal-access"></i></div>
+            <h3 class="service-title">Accessibility</h3>
+            <p class="service-text">
+              Builds with proper semantics, keyboard navigation, and inclusive color contrast. Good design works for everyone.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="text-center mb-5" data-animate="fade-up">
+        <span class="section-eyebrow">Experience</span>
+        <h2 class="section-title mx-auto">
+          A track record of <span class="text-gradient-1">growth</span>.
+        </h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item" data-animate="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-meta">
+              <span class="timeline-period">2027 - Onwards</span>
+              <span class="timeline-tag">Full-time</span>
+            </div>
+            <h3 class="timeline-role">Full Stack Developer</h3>
+            <span class="timeline-company text-gradient-3">Servkode SaaS ~ Web3</span>
+            <p class="timeline-text">
+              Lead full-stack engineer for a suite of SaaS products, owning the design system
+              and mentoring a team of three.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate="fade-up" data-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-meta">
+              <span class="timeline-period">2020 — Present</span>
+              <span class="timeline-tag">Full-time</span>
+            </div>
+            <h3 class="timeline-role">Front-End Developer</h3>
+            <span class="timeline-company text-gradient-3">Servkode</span>
+            <p class="timeline-text">
+              At Servkode, I spearhead the creation of visually compelling and user-friendly websites tailored to meet the unique needs of our clients.
+              My role involves collaborating with various companies to enhance their digital presence through comprehensive web design and development,
+              commercial graphic design, and social media services.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate="fade-up" data-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-meta">
+              <span class="timeline-period">2022 — 2026</span>
+              <span class="timeline-tag">Full-time</span>
+            </div>
+            <h3 class="timeline-role">Senior Operations Manager</h3>
+            <span class="timeline-company text-gradient-3">Monument Park Holdings</span>
+            <p class="timeline-text">
+              At Monument Park Holdings, I lead and managed a dynamic team of approximately 250-300 employees, including lower management.
+              My role encompassed comprehensive oversight of daily operations, process analysis, and development to ensure optimal efficiency and performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-shell glass">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5" data-animate="fade-up">
+            <span class="section-eyebrow">Contact</span>
+            <h2 class="section-title">
+              Let's build something
+              <span class="text-gradient-2">memorable</span>.
+            </h2>
+            <p class="section-text">
+              Have a project in mind or just want to say hi? Drop me a line and
+              I'll get back to you within 24 hours.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-ico"><i class="bi bi-envelope"></i></span>
+                <a href="mailto:flavio@servkode.co.za">flavio@servkode.co.za</a>
+              </li>
+              <li>
+                <span class="contact-ico"><i class="bi bi-geo-alt"></i></span>
+                <span>Remote · Worldwide</span>
+              </li>
+              <li>
+                <span class="contact-ico"><i class="bi bi-clock"></i></span>
+                <span>Mon–Fri · 9am – 6pm</span>
+              </li>
+            </ul>
+            <div class="social-row mt-4">
+              <a href="https://github.com/f-camara" class="social-btn" aria-label="GitHub" target="_blank"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/flavio-camara-80950a232/" class="social-btn" aria-label="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-animate="fade-up" data-delay="120">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name"
+                    placeholder="Jane Doe" required minlength="2" />
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email"
+                    placeholder="jane@company.com" required />
+                  <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                <div class="col-12">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="subject" name="subject"
+                    placeholder="Project inquiry" required />
+                  <div class="invalid-feedback">Please add a subject.</div>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="5"
+                    placeholder="Tell me about your project..." required minlength="10"></textarea>
+                  <div class="invalid-feedback">Please write at least 10 characters.</div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-gradient btn-lg w-100">
+                    Send message
+                  </button>
+                  <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="container-fluid site-footer">
+      <div class="footer-bottom">
+        <p class="mb-0">© <span id="year"></span> Flavio Camara.</p>
+      </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
